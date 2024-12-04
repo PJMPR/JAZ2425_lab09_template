@@ -1,9 +1,7 @@
 package com.westeros.moviesclient;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-@Component
 public record MoviesClientUriBuilderProvider(String apiKey, String host,
                                              int apiVersion) implements IMoviesClientUriBuilderProvider {
     /**
